@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Configurações básicas do documento HTML5 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título exibido na aba do navegador -->
+    <title>Portfólio | Matheus Wiziack Silveira</title>
+
+    <!-- Arquivo CSS externo, que será desenvolvido no próximo passo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho principal do site -->
+    <header class="cabecalho">
+        <div class="container cabecalho-conteudo">
+            <h1>Matheus Wiziack Silveira</h1>
+            <p>Administração | Análise e Desenvolvimento de Sistemas | Tecnologia</p>
+
+            <!-- Botão opcional para alternar tema claro/escuro com JavaScript -->
+            <button id="botao-tema" type="button">
+                Alternar tema
+            </button>
+        </div>
+    </header>
+
+    <!-- Menu de navegação com âncoras para as seções da mesma página -->
+    <nav class="menu">
+        <div class="container menu-conteudo">
+            <a href="#sobre">Sobre mim</a>
+            <a href="#formacao">Formação</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#contato">Contato</a>
+        </div>
+    </nav>
+
+    <!-- Conteúdo principal do site -->
+    <main>
+
+        <!-- Seção Sobre mim -->
+        <section id="sobre" class="secao">
+            <div class="container">
+                <h2>Sobre mim</h2>
+
+                <p>
+                    Meu nome é Matheus Wiziack Silveira, tenho 24 anos e sou uma pessoa
+                    movida por curiosidade, dedicação e vontade constante de evoluir.
+                    Gosto de aprender coisas novas, enfrentar desafios e transformar
+                    ideias em projetos práticos, especialmente quando envolvem tecnologia,
+                    organização e criatividade.
+                </p>
+            </div>
+        </section>
+
+        <!-- Seção Formação -->
+        <section id="formacao" class="secao">
+            <div class="container">
+                <h2>Formação</h2>
+
+                <p>
+                    Atualmente, estou finalizando minha graduação em Administração, uma área
+                    que me proporcionou uma visão ampla sobre gestão, negócios, planejamento,
+                    finanças, pessoas e processos organizacionais. Essa formação contribuiu
+                    bastante para o meu desenvolvimento analítico e para minha capacidade de
+                    compreender problemas de forma estruturada.
+                </p>
+
+                <p>
+                    Além disso, estou cursando Análise e Desenvolvimento de Sistemas de forma
+                    concomitante, buscando unir minha base administrativa com conhecimentos
+                    técnicos em tecnologia. Tenho interesse especial por programação,
+                    desenvolvimento web, automação de tarefas, análise de dados e criação de
+                    soluções digitais que possam facilitar processos do dia a dia.
+                </p>
+
+                <p>
+                    Essa combinação entre Administração e Tecnologia me permite enxergar
+                    projetos tanto pelo lado estratégico quanto pelo lado técnico, o que
+                    considero um diferencial importante para minha trajetória profissional.
+                </p>
+
+                <h3>Conhecimentos em desenvolvimento</h3>
+
+                <ul>
+                    <li>HTML5 e estruturação de páginas web</li>
+                    <li>CSS3 para estilização e responsividade</li>
+                    <li>JavaScript para interações e validações</li>
+                    <li>Lógica de programação</li>
+                    <li>Noções de gestão, processos e organização empresarial</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Seção Portfólio -->
+        <section id="portfolio" class="secao">
+            <div class="container">
+                <h2>Portfólio</h2>
+
+                <p>
+                    Meu portfólio reúne trabalhos práticos e atividades desenvolvidas durante
+                    minha formação acadêmica e meus estudos na área de tecnologia. Entre eles,
+                    estão projetos voltados à programação, desenvolvimento de páginas web,
+                    estruturação de sistemas simples, organização de informações e aplicação
+                    de lógica computacional para resolver problemas.
+                </p>
+
+                <p>
+                    Ainda estou em fase de construção da minha trajetória na área, mas cada
+                    projeto representa uma etapa importante do meu aprendizado. Busco
+                    desenvolver trabalhos com código organizado, boa apresentação visual e foco
+                    na funcionalidade, sempre procurando evoluir a cada nova atividade.
+                </p>
+
+                <!-- Cards de projetos abstratos para compor o portfólio -->
+                <div class="cards-portfolio">
+
+                    <article class="card">
+                        <h3>Projeto de Página Web Pessoal</h3>
+                        <p>
+                            Desenvolvimento de uma página pessoal utilizando HTML, CSS e
+                            JavaScript, com foco em organização visual, navegação clara e
+                            apresentação de informações profissionais.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Atividades Práticas de Programação</h3>
+                        <p>
+                            Exercícios acadêmicos envolvendo lógica de programação, criação de
+                            estruturas simples, manipulação de dados e resolução de problemas
+                            computacionais.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Estudos em Desenvolvimento Web</h3>
+                        <p>
+                            Práticas voltadas à criação de interfaces, formulários, menus,
+                            validações e organização de conteúdo para aplicações web simples.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contato" class="secao">
+            <div class="container">
+                <h2>Contato</h2>
+
+                <p>
+                    Caso queira entrar em contato comigo, estou disponível pelo WhatsApp:
+                </p>
+
+                <p>
+                    <strong>WhatsApp:</strong>
+                    <a href="https://wa.me/5517988361835" target="_blank">
+                        (17) 98836-1835
+                    </a>
+                </p>
+
+                <p>
+                    Também é possível enviar uma mensagem diretamente pelo formulário abaixo.
+                </p>
+
+                <!-- Formulário com validação obrigatória em JavaScript -->
+                <form id="formulario-contato">
+                    <div class="campo-formulario">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome">
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail">
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
+                    </div>
+
+                    <button type="submit">
+                        Enviar mensagem
+                    </button>
+
+                    <!-- Aqui será exibida a mensagem de sucesso ou erro via JavaScript -->
+                    <p id="mensagem-retorno"></p>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé do site -->
+    <footer class="rodape">
+        <div class="container">
+            <p>
+                &copy; 2026 Matheus Wiziack Silveira. Todos os direitos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Arquivo JavaScript externo, que será desenvolvido depois -->
+    <script src="script.js"></script>
+</body>
+</html>
